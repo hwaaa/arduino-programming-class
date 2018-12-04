@@ -6,6 +6,11 @@ void loop() {
   // put your main code here, to run repeatedly:
   for(int i=0; i<=255; i++) {
     analogWrite(9, i);
-    delay(500);
+    delay(100);
+  }
+
+  for(int i=255; i>0; i-=10) {
+    analogWrite(9, i);
+    delay(100);
   }
 }
