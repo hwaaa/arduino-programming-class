@@ -57,6 +57,7 @@ void setup() {
   
   pinMode(dp_pin, OUTPUT);
 
+// 2번핀-0번, 3번핀-1번
   attachInterrupt(0, btn1ISR, RISING);
   //attachInterrupt(1, btn2ISR, CHANGE);
 
@@ -88,6 +89,7 @@ void loop() {
   delayMicroseconds(1000);
 }
 
+// 값 반전해서 넣어주기           
 void btn1ISR() {
   plus = !plus;
   Serial.println("1ISR");
