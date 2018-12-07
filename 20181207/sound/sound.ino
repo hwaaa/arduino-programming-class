@@ -2,6 +2,7 @@ int sound_pin = A0;
 int yled_pin = 11;
 int rled_pin = 10;
 int gled_pin = 9;
+
 int cnt = 0;
 
 void setup() {
